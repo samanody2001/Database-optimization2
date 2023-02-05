@@ -1,0 +1,73 @@
+Query1:
+CREATE INDEX INDEX1 ON film USING BTREE(film_id) where film.length >160;
+query2:
+CREATE INDEX INDEX2 ON film_category USING BTREE(category_id);
+query3:
+CREATE INDEX INDEX3 ON film_actor USING BTREE(actor_id);
+query4:
+CREATE INDEX INDEX4 ON film_category USING BTREE(category_id);
+query5:
+CREATE INDEX INDEX5 ON payment USING BTREE(payment_id) where payment_date BETWEEN '2007-01-01' AND '2008-01-01';
+CREATE INDEX INDEX6 ON payment USING BTREE(customer_id); 
+query6:
+CREATE INDEX INDEX7 ON actor USING HASH(first_name) ;
+query7:
+CREATE INDEX INDEX8 ON actor USING HASH(last_name) ;
+query8:
+CREATE INDEX INDEX9 ON country USING BTREE(country) WHERE country IN ('Afghanistan', 'Bangladesh', 'China');
+query9:
+query10:
+CREATE INDEX INDEX10 ON actor USING gist(first_name gist_trgm_ops) ;
+query11:
+CREATE INDEX INDEX11 ON actor USING HASH(last_name);
+query12:
+CREATE INDEX INDEX12 ON staff USING BTREE(address_id);
+query13:
+CREATE INDEX INDEX13 ON payment USING BTREE(staff_id);
+query14:
+CREATE INDEX INDEX14 ON customer USING HASH(address_id);
+CREATE INDEX INDEX15 ON address USING HASH(city_id);
+CREATE INDEX INDEX16 ON city USING HASH(country_id);
+query15:
+CREATE INDEX INDEX17 ON film_category USING HASH(category_id);
+query16:
+CREATE INDEX INDEX18 ON staff USING BTREE(store_id);
+CREATE INDEX INDEX19 ON payment USING BTREE(staff_id); 
+query17:
+CREATE INDEX INDEX20 ON film_category USING BTREE(film_id); 
+CREATE INDEX INDEX21 ON inventory USING BTREE(film_id); 
+CREATE INDEX INDEX22 ON rental USING BTREE(inventory_id); 
+Query18:
+CREATE INDEX INDEX23 ON film_category USING BTREE(film_id); 
+CREATE INDEX INDEX24 ON inventory USING BTREE(film_id); 
+CREATE INDEX INDEX25 ON rental USING BTREE(inventory_id); 
+query19:
+CREATE INDEX INDEX26 ON film_actor USING BTREE(actor_id); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
