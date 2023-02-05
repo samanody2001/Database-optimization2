@@ -9,14 +9,12 @@ In this project I optimized a set of queries. For each query, I:
 ## project2-queries.sql contains 19 queries to be optimized individually.
 ## create_commands: indexes used to optimize each query.
 ## pdf file that contains the following:
-a) For each of the 18 queries, list which attribute you will create an index on and which index type
-you will use along with justification
-b) List the physical plan of each query along with the planing time. If you changed anything in the
-config file for a query, then list the command concerning the query tuning used in the config file for
-each query (expected 38 plans)
-c) List the parts of the two plans (before and after the index) that had the highest cost, slowest
+a) For each of the 18 queries, list of attributes created an index on and which index type
+used along with justification
+b) The physical plan of each query along with the planing time
+c) The parts of the two plans (before and after the index) that had the highest cost, slowest
 runtime, and largest number of rows for the physical plan presented in the output
-d) Compare the physical plans before and after adding the index for every query
-e) Provide a justification for the observed behavior
+d) Compared physical plans before and after adding the index for every query
+e) A justification for the observed behavior
 
 
